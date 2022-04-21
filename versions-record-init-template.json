@@ -16,7 +16,7 @@
     "sub project": {
         "future": {},
         "pesent": {
-            "main": "0.0.a.0 -> now"
+            "main": "0.0 -> now"
         },
         "past": {}
     }
