@@ -1,0 +1,63 @@
+{
+    "versions task record": { //Sort versions from new to old
+        "0.2": {
+            "version tasks": [
+                "main",
+                "OS/System",
+                "OS/Application"
+            ],
+            "sub versions": {
+                "release": ""
+            }
+        },
+        "0.1": {
+            "version tasks": [
+                "main",
+                "OS/System" // whem write sub versions of sub versions
+            ],
+            "sub versions": {
+                "release": ""
+            }
+        },
+        "0.0": { //main versions
+            "version tasks": [ //pick from sub project what this version is going to do.
+                "main"
+            ],
+            "sub versions": { //Sort versions from new to old
+                /*
+                    Meaning of each version name:
+
+                    release: version that make sure you've already fixed all bugs and can deploy
+                    beta: have some degree of stability for peoeple to test your project
+                    alpha: unstabillity project so should test by proffesional
+                */
+                "release": "Good Version", //write release if you've already finished this version and leave some comment for you could back to read it.
+                "beta": {
+                    "0.0.b.0": [
+                        "0.0.a.1 now stable" // when last versions of alpha is stable, you can send it to beta
+                    ]
+                },
+                "alpha": {
+                    "0.0.a.1": [
+                        "fix bux (main)", //write about your action on your sub project
+                        "finish (main)"
+                    ],
+                    "0.0.a.0": [
+                        "create (main)"
+                    ]
+                }
+            }
+        }
+    },
+    "sub project": {
+        "future": {}, //for note new sub project idea that you're going to use in the future.
+        "pesent": {
+            "main": "0.0 -> now",
+            "OS": { //can more devide sub project into sup project of sub project to keep your project organized
+                "System": "0.1 -> now",
+                "Application": "0.2 -> now"
+            }
+        },
+        "past": {} // for record old sub project that you don't use it anymore
+    }
+}

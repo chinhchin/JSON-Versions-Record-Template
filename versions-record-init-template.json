@@ -1,0 +1,23 @@
+{
+    "versions task record": {
+        "0.0": {
+            "versions task": [
+                "main"
+            ],
+            "sub versions": {
+                "alpha": {
+                    "0.0.a.0": [
+                        "create (main)"
+                    ]
+                }
+            }
+        }
+    },
+    "sub project": {
+        "future": {},
+        "pesent": {
+            "main": "0.0.a.0 -> now"
+        },
+        "past": {}
+    }
+}
